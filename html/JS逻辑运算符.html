@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script type="text/javascript">
+            var flag = true;
+            document.write(flag + "<br>"); // true
+            document.write(!flag + "<br>"); // false
+            document.write(!!flag + "<br>"); // true
+            document.write("<hr>");
+
+            // 1.number: 0 为假，非0为真
+            var num = 3;
+            var num1 = 0;
+            var num2 = NaN;
+            document.write("1.number:" + "<br>");
+            document.write(!!num + "<br>"); // true
+            document.write(!!num1 + "<br>"); // false
+            document.write(!!num2 + "<br>"); // false
+            document.write("<hr>");
+
+            //2.string:
+            var str = "abc";
+            var str1 = "";
+            document.write("2.string" + "<br>");
+            document.write(!!str + "<br>"); // true
+            document.write(!!str1 + "<br>"); // false
+            document.write("<hr>");
+
+            //3.null & undefined
+            var obj = null;
+            var obj2;
+            document.write("3.null & undefined" + "<br>");
+            document.write(!!obj + "<br>"); // false
+            document.write(!!obj2 + "<br>"); // false
+            document.write("<hr>");
+
+            //4.obj
+            document.write("3.obj" + "<br>");
+            var date = new Date();
+            document.write(!!date + "<br>"); // true
+            document.write(!!date + "<br>"); // true
+            document.write("<hr>");
+
+            if (obj) {
+            }
+        </script>
+    </head>
+    <body></body>
+</html>

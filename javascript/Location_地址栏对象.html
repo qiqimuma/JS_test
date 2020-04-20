@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Location对象</title>
+    </head>
+    <body>
+        <input id="btn" type="button" value="刷新" />
+        <input id="goWeb" type="button" value="跳转" />
+        <!-- <script>
+            alert("刷新成功！");
+        </script> -->
+        <script>
+            //1.reload()方法，定义一个按钮，点击按钮，刷新当前页面
+            var btn = document.getElementById("btn");
+            btn.onclick = function () {
+                location.reload();
+            };
+
+            //2.属性href：
+            //var href = location.href;
+            // alert(href);
+
+            var goWeb = document.getElementById("goWeb");
+            goWeb.onclick = function () {
+                location.href = "http://www.qiqimuma.com";
+            };
+        </script>
+    </body>
+</html>

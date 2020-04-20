@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>轮播图</title>
+        <script>
+            /*
+        
+        */
+            var num = 1;
+            function fun() {
+                num += 1;
+                if (num > 3) {
+                    num = 1;
+                }
+                var img = document.getElementById("img");
+                img.src = "../img/banner_" + num + ".jpg";
+            }
+            setInterval(fun, 3000);
+        </script>
+    </head>
+    <body>
+        <img id="img" src="../img/banner_1.jpg" alt="" width="100%" />
+    </body>
+</html>

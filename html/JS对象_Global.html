@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            var str = "测试";
+            //url 编码
+            var encode = encodeURI(str);
+            document.write(encode + "<br>");
+            var decode = decodeURI(encode);
+            //url 解码
+            document.write(decode + "<br>");
+            var str1 = "测试1";
+            //url 编码，编码的字符更多
+            var encode1 = encodeURIComponent(str1);
+            document.write(encode1 + "<br>");
+            //url 解码
+            var decode1 = decodeURIComponent(encode1);
+            document.write(decode1 + "<br>");
+
+            var str = "123abcd";
+            var number = parseInt(str);
+            document.write(number + "<br>");
+
+            //判断是否NaN
+            var a = NaN;
+            document.write(isNaN(a));
+
+            var jscode = "alert(123)";
+            eval(jscode);
+        </script>
+    </head>
+
+    <body></body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML_DOM_样式控制</title>
+    </head>
+    <body>
+        <div id="div1">div</div>
+
+        <script>
+            /*
+        控制元素样式：
+            1.使用元素的style属性来设置。
+        */
+            var div1 = document.getElementById("div1");
+            div1.onclick = function () {
+                div1.style.border = "1px solid red";
+                div1.style.width = "200px";
+            };
+        </script>
+    </body>
+</html>

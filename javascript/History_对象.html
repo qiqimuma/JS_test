@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History对象</title>
+</head>
+<body>
+    <input id="btn" type="button" value="获取">
+    <script>
+        /*
+        History 对象：
+            1.创建：
+                window.history
+                history 
+            2.方法：
+                a.back()：   加载history 列表的前一个 URL;
+                b.forward()：加载history 列表的下一个 URL;
+                c.go()：     加载history 列表的某个具体页面。
+                    参数1： 相当于forward()
+                    参数-1：相当于back()   
+            3.属性：
+                length       返回当前窗口历史列表中的URL数量。
+        */
+
+        var btn = document.getElementById("btn");
+        btn.onclick = function() {
+            //获取当前窗口的历史记录个数
+            var length = history.length;
+            alert(length);
+        }
+    </script>
+    
+    <input type="button" value="后退">
+</body>
+</html>,

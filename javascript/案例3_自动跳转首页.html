@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>自动跳转首页</title>
+        <style>
+            p {
+                text-align: center;
+            }
+            #time {
+                color: crimson;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            var second = 5;
+            function fun() {
+                second--;
+                if (second <= 0) {
+                    //clearInterval(id);
+                    location.href = "http://www.qiqimuma.com";
+                }
+                var time = document.getElementById("time");
+                time.innerHTML = second + "";
+            }
+            var id = setInterval(fun, 1000);
+        </script>
+        <p><span id="time">5</span>秒之后，自动跳转到首页。。。</p>
+    </body>
+</html>

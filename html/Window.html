@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            // alert(screen.availWidth + "*" + screen.availHeight);
+            /*
+        Window: 窗口对象
+            1.创建
+            2.方法
+                1.与弹出框有关的方法：
+                    alert() 显示带有一段消息和一个确认按钮的警告框。
+                    confirm() 显示带有一段消息以及确认按钮和取消按钮的对话框。
+                        a.如果用户点击确定按钮，返回true
+                        b.如果用户点击取消按钮，则方法返回false
+                    prompt() 显示可提示用户输入的对话框。
+        */
+            // var flag = window.confirm("退出？");
+            // alert(flag);
+
+            //输入框（返回值，获取用户输入的值）
+            /*var input = window.prompt("请输入用户名：");
+            alert(input);*/
+        </script>
+    </head>
+    <body>
+        <!-- <input id="openBtn" type="button" value="打开窗口" />
+        <input id="closeBtn" type="button" value="关闭窗口">
+        <script>
+            var w;
+            var obj = document.getElementById("openBtn");
+            obj.onclick = function () {
+                w = open("http://www.qiqimuma.com");
+            };
+
+            var close = document.getElementById("closeBtn");
+            close.onclick = function() {
+                w.close();
+            }
+        </script> -->
+
+        <script>
+            //一次性定时器
+            // setTimeout("alert('boom~~~~');",2000);
+            //var id = setTimeout(fun,2000);
+            // 取消定时器
+            //clearTimeout(id);
+
+            function fun() {
+                alert("boom~~~~");
+            }
+
+            //循环定时器
+            var id = setInterval(fun, 2000);
+            clearInterval(id);
+            //
+        </script>
+    </body>
+</html>

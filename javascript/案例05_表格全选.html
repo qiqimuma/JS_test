@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>表格全选</title>
+        <style>
+            table {
+                margin: 100px auto 10px;
+                border: 1px solid;
+                width: 500px;
+            }
+            span {
+                font-size: 18px;
+            }
+            th,
+            td {
+                border: 1px solid;
+                text-align: center;
+            }
+            div {
+                margin: 0px auto;
+                width: 500px;
+            }
+        </style>
+        <script>
+            window.onload = function () {
+                document.getElementById("selectAll").onclick = function () {
+                    var cbs = document.getElementsByName("cb");
+                    //alert(cbs.length);
+                    for (var i = 0; i < cbs.length; i++) {
+                        cbs[i].checked = true;
+                    }
+                };
+                document.getElementById("unSelectAll").onclick = function () {
+                    var cbs = document.getElementsByName("cb");
+                    //alert(cbs.length);
+                    for (var i = 0; i < cbs.length; i++) {
+                        cbs[i].checked = false;
+                    }
+                };
+                document.getElementById("selectRev").onclick = function () {
+                    var cbs = document.getElementsByName("cb");                    
+                    for (var i = 0; i < cbs.length; i++) {
+                        cbs[i].checked = !cbs[i].checked;                        
+                    }
+                };
+                document.getElementById("firstCb").onclick = function () {
+                    var cbs = document.getElementsByName("cb");
+                    //alert(cbs.length);
+                    for (var i = 1; i < cbs.length; i++) {
+                        cbs[i].checked = this.checked;
+                    }
+                };
+            };
+        </script>
+    </head>
+    <body>
+        <table>
+            <caption>
+                <span>学生信息表</span>
+            </caption>
+            <tr>
+                <th><input type="checkbox" name="cb" id="firstCb" /></th>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="cb" /></td>
+                <td>1</td>
+                <td>令狐冲</td>
+                <td>男</td>
+                <td><a href="javascript:void(0);">删除</a></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="cb" /></td>
+                <td>2</td>
+                <td>任我行</td>
+                <td>男</td>
+                <td><a href="javascript:void(0);">删除</a></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="cb" /></td>
+                <td>3</td>
+                <td>岳不群</td>
+                <td>?</td>
+                <td><a href="javascript:void(0);">删除</a></td>
+            </tr>
+        </table>
+        <div>
+            <input id="selectAll" type="button" value="全选" />
+            <input id="unSelectAll" type="button" value="全不选" />
+            <input id="selectRev" type="button" value="反选" />
+        </div>
+    </body>
+</html>
