@@ -1,142 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>注册页面</title>
-        <style>
-            * {
-                margin: 0px;
-                padding: 0px;
-                box-sizing: border-box;
-            }
-            body {
-                background: url("../img/register_bg.png") no-repeat center;
-                background-size: 100%;
-                background-attachment: fixed;
-            }
-            .rg_layout {
-                margin: 100px auto;
-                width: 800px;
-                height: 500px;
-                background-color: white;
-                border: 8px solid #eeeeee;
-            }
-            .rg_left {
-                float: left;
-            }
-            .rg_center {
-                float: left;
-                width: 500px;
-            }
-            .rg_right {
-                float: right;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="rg_layout">
-            <div>
-                <div class="rg_left">
-                    <p>新用户注册</p>
-                    <p>USER REGISTER</p>
-                </div>
-                <div class="rg_center">
-                    <form action="#" method="post">
-                        <table>
-                            <tr>
-                                <td>用户名</td>
-                                <td>
-                                    <input
-                                        type="text"
-                                        name="username"
-                                        placeholder="请输入账号"
-                                    />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>密码</td>
-                                <td>
-                                    <input
-                                        type="text"
-                                        name="username"
-                                        placeholder="请输入账号"
-                                    />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td>
-                                    <input
-                                        type="text"
-                                        name="username"
-                                        placeholder="请输入账号"
-                                    />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>姓名</td>
-                                <td>
-                                    <input
-                                        type="text"
-                                        name="username"
-                                        placeholder="请输入账号"
-                                    />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>手机号</td>
-                                <td>
-                                    <input
-                                        type="text"
-                                        name="username"
-                                        placeholder="请输入账号"
-                                    />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>性别</td>
-                                <td>
-                                    <input
-                                        type="radio"
-                                        name="username"
-                                        value="男"
-                                    />
-                                    <input
-                                        type="radio"
-                                        name="username"
-                                        value="女"
-                                    />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>出生日期</td>
-                                <td>
-                                    <input
-                                        type="text"
-                                        name="username"
-                                        placeholder="请输入账号"
-                                    />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>验证码</td>
-                                <td>
-                                    <input
-                                        type="text"
-                                        name="username"
-                                        placeholder="请输入账号"
-                                    />
-                                </td>
-                            </tr>
-                        </table>
-                    </form>
-                </div>
-                <div class="rg_right">
-                    <p>已有账号？</p>
-                    <a href="#">立即登陆</a>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>注册页面</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background: url("../img/register_bg.png") no-repeat center;
+        background-size: 100%;
+        background-attachment: fixed;
+      }
+      .rg_layout {
+        margin: 100px auto;
+        width: 800px;
+        height: 500px;
+        background-color: white;
+        border: 8px solid #eeeeee;
+      }
+      .rg_left {
+        float: left;
+        margin: 15px;
+      }
+      .rg_left > p:first-child {
+        color: #ffd026;
+        font-size: 20px;
+      }
+      .rg_left > p:last-child {
+        color: #a6a6a6;
+        font-size: 20px;
+      }
+      .rg_center {
+        float: left;
+        width: 500px;
+      }
+      .rg_right {
+        float: right;
+      }
+      .rg_right p a {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rg_layout">
+      <div>
+        <div class="rg_left">
+          <p>新用户注册</p>
+          <p>USER REGISTER</p>
         </div>
-    </body>
+        <div class="rg_center">
+          <form action="#" method="post">
+            <table>
+              <tr>
+                <td>用户名</td>
+                <td>
+                  <input type="text" name="username" placeholder="请输入账号" />
+                </td>
+              </tr>
+              <tr>
+                <td>密码</td>
+                <td>
+                  <input type="text" name="password" placeholder="请输入密码" />
+                </td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>
+                  <input type="text" name="email" placeholder="请输入账号" />
+                </td>
+              </tr>
+              <tr>
+                <td>姓名</td>
+                <td>
+                  <input type="text" name="name" placeholder="请输入账号" />
+                </td>
+              </tr>
+              <tr>
+                <td>手机号</td>
+                <td>
+                  <input type="text" name="tel" placeholder="请输入账号" />
+                </td>
+              </tr>
+              <tr>
+                <td>性别</td>
+                <td>
+                  <input type="radio" name="username" value="男" />
+                  <input type="radio" name="username" value="女" />
+                </td>
+              </tr>
+              <tr>
+                <td>出生日期</td>
+                <td>
+                  <input type="text" name="username" placeholder="请输入账号" />
+                </td>
+              </tr>
+              <tr>
+                <td>验证码</td>
+                <td>
+                  <input type="text" name="username" placeholder="请输入账号" />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+        <div class="rg_right">
+          <p>已有账号？<a href="#">立即登陆</a></p>
+          
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
